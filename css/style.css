@@ -1,0 +1,94 @@
+.button a {
+  padding: 15px 25px 15px 25px;
+  border: solid hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  border-radius: 45px;
+}
+.button a:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+.card {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15%;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.card .text-box {
+  margin-top: -30%;
+}
+.card .text-box h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin-bottom: 20%;
+  font-size: 40px;
+  color: hsl(0, 0%, 95%);
+}
+.card .text-box p {
+  line-height: 1.7;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+}
+
+main {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 900px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+.sedan a {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+.suv a {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+.luxury a {
+  color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 767px) {
+  main {
+    grid-template-columns: 1fr;
+    margin: 2rem;
+  }
+  .card {
+    height: 450px;
+  }
+  .card .text-box {
+    margin-top: -10%;
+  }
+  .card .text-box h1 {
+    margin-bottom: 10%;
+  }
+}

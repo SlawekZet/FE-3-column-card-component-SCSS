@@ -1,0 +1,53 @@
+@import "config";
+@import "buttons";
+@import "cards";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: $gray;
+}
+
+main {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 900px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sedan {
+  background-color: $orange;
+
+  a {
+    color: $orange;
+  }
+}
+
+.suv {
+  background-color: $cyan;
+
+  a {
+    color: $cyan;
+  }
+}
+
+.luxury {
+  background-color: $dark-cyan;
+
+  a {
+    color: $dark-cyan;
+  }
+}
+
+@import "mobile";

@@ -1,0 +1,24 @@
+.card {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15%;
+  color: $white;
+
+  .text-box {
+    margin-top: -30%;
+
+    h1 {
+      font-family: $font-headings;
+      text-transform: uppercase;
+      margin-bottom: 20%;
+      font-size: 40px;
+      color: $gray;
+    }
+
+    p {
+      line-height: 1.7;
+    }
+  }
+}

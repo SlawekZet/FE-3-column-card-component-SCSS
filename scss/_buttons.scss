@@ -1,0 +1,14 @@
+.button {
+  a {
+    padding: 15px 25px 15px 25px;
+    border: solid $gray;
+    background-color: $gray;
+    text-decoration: none;
+    border-radius: 45px;
+  }
+
+  a:hover {
+    background-color: transparent;
+    color: $gray;
+  }
+}
